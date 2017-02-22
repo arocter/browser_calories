@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Calories</title>
+  <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+  <form>
+    <h3>Budget</h3>
+    <p class="description">Values are defined in bytes</p>
+
+    <div class="input-container">
+      <label for="html">HTML</label>
+      <input type="number" id="html" name="html" value="" required min="0" max="5000000">
+    </div class="input-container">
+
+    <div class="input-container">
+      <label for="images">Images</label>
+      <input type="number" id="image" name="image" value="" required min="0" max="5000000">
+    </div class="input-container">
+
+    <div class="input-container">
+      <label for="css">CSS</label>
+      <input type="number" id="css" name="css" value="" required min="0" max="5000000">
+    </div class="input-container">
+
+    <div class="input-container">
+      <label for="js">JavaScript</label>
+      <input type="number" id="js" name="js" value="" required min="0" max="5000000">
+    </div class="input-container">
+
+    <div class="input-container">
+      <label for="other">Other</label>
+      <input type="number" id="other" name="other" value="" required min="0" max="5000000">
+    </div class="input-container">
+
+    <button class="button" type="submit">Save</button>
+    <button class="button" type="button" id="reset">Reset</button>
+    <span class="status">Budget saved!</span>
+  </form>
+
+  <script src="scripts/options.js"></script>
+</body>
+</html>
